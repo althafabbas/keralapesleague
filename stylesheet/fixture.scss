@@ -1,0 +1,54 @@
+@import 'responsive';
+@import 'font-fam';
+@import 'colors';
+// variables
+
+.fixture-container{
+    margin-top: 80px;
+
+    *{
+        font-family: $secondary-fond;
+    }
+    .fixture-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .r{
+            height: 180px;
+           display: flex;
+           text-align: center;
+           margin-bottom: 30px;
+           border-bottom: 2px solid $primary-color;
+           &.row-1{
+               margin-top: 20px;
+           }
+           .logo{
+               img{
+                   width: 80px;
+
+                   //------------- tablet responsive here
+
+                //    @include tablet{
+                       
+                //    }
+
+               }
+           }
+
+            //-------------------- mobile responsive here   
+            h3{
+                @include mobile{
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+              }
+        }
+
+        .vs{
+            display: flex;
+            align-items: center;
+           margin: 0 30px;
+        }
+    }
+}
