@@ -366,13 +366,30 @@ gradient stripe css
 }
 
 .match-result-container .match-container .match-details .r {
+  width: 500px;
   height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   margin-bottom: 30px;
+  color: white;
   border-bottom: 2px solid white;
+  background-color: #30304e;
+  -webkit-box-shadow: 6px 6px 10px black;
+          box-shadow: 6px 6px 10px black;
+}
+
+@media screen and (max-width: 667px) {
+  .match-result-container .match-container .match-details .r {
+    width: 410px;
+  }
 }
 
 .match-result-container .match-container .match-details .r.row-1 {
@@ -381,6 +398,16 @@ gradient stripe css
 
 .match-result-container .match-container .match-details .r .logo img {
   width: 80px;
+  -webkit-transition: -webkit-transform ease 2s;
+  transition: -webkit-transform ease 2s;
+  transition: transform ease 2s;
+  transition: transform ease 2s, -webkit-transform ease 2s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
 }
 
 @media screen and (max-width: 667px) {
@@ -391,12 +418,36 @@ gradient stripe css
 }
 
 .match-result-container .match-container .match-details .vs {
+  font-size: 22px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 30px;
+}
+
+@media screen and (max-width: 667px) {
+  .match-result-container .match-container .match-details .vs .bar-vs {
+    height: 55px;
+    text-align: center;
+  }
+}
+
+.match-result-container .match-container .match-details .vs h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.match-result-container .match-container .match-details .vs .goal-score {
+  text-align: center;
+  font-size: 34px;
+  margin: 0 20px;
 }
 /*# sourceMappingURL=main.css.map */

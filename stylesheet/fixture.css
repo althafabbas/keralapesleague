@@ -4,6 +4,7 @@
 
 .fixture-container * {
   font-family: "Bebas Neue", cursive;
+  color: white;
 }
 
 .fixture-container .fixture-details {
@@ -23,13 +24,29 @@
 }
 
 .fixture-container .fixture-details .r {
-  height: 180px;
+  width: 500px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
   border-bottom: 2px solid white;
+  background-color: #30304e;
+  -webkit-box-shadow: 6px 6px 10px black;
+          box-shadow: 6px 6px 10px black;
+}
+
+@media screen and (max-width: 667px) {
+  .fixture-container .fixture-details .r {
+    width: 410px;
+  }
 }
 
 .fixture-container .fixture-details .r.row-1 {

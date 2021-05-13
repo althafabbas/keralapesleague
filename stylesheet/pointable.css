@@ -17,6 +17,7 @@ header nav .nav-links li a {
 .ptable table {
   margin: 30px auto;
   border-collapse: collapse;
+  background-color: #30304e;
 }
 
 .ptable {
@@ -47,7 +48,11 @@ th {
 }
 
 .wpos td {
-  color: #000000;
+  color: white;
+}
+
+.wpos td.divider {
+  border-bottom: 3px solid green;
 }
 
 .pos {
